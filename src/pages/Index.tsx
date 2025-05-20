@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { featuredPoems, poems } from "@/data/poems";
@@ -6,9 +7,16 @@ import FeaturedPoem from "@/components/FeaturedPoem";
 import SectionHeading from "@/components/SectionHeading";
 import PoemGrid from "@/components/PoemGrid";
 import CategoryGrid from "@/components/CategoryGrid";
+import { Shuffle } from "lucide-react";
 
 const Index = () => {
-  const featuredPoem = featuredPoems[0] || poems[0];
+  const [currentPoem, setCurrentPoem] = useState(featuredPoems[0] || poems[0]);
+
+  const handleRandomPoem = () => {
+    const randomIndex = Math.floor(Math.random() * poems.length);
+    setCurrentPoem(poems[randomIndex]);
+  };
+
   const recentPoems = poems.slice(0, 6);
 
   return (
@@ -24,8 +32,15 @@ const Index = () => {
               A calm, focused environment where poetry enthusiasts can explore, 
               read, and emotionally connect with classical and contemporary poems.
             </p>
+            <Button 
+              onClick={handleRandomPoem} 
+              className="bg-rekhta-gold hover:bg-rekhta-gold/90 text-white mb-4"
+            >
+              <Shuffle className="mr-2" />
+              Random Poetry
+            </Button>
           </div>
-          <FeaturedPoem poem={featuredPoem} />
+          <FeaturedPoem poem={currentPoem} />
         </div>
       </section>
 
