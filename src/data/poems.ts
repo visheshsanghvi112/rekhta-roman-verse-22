@@ -1,3 +1,4 @@
+import { englishPoems, EnglishPoem } from "./englishPoems";
 
 export interface Poem {
   id: string;
@@ -6,9 +7,11 @@ export interface Poem {
   author: string;
   category?: string[];
   isFeatured?: boolean;
+  language?: "urdu" | "hindi" | "english";
 }
 
-export const poems: Poem[] = [
+// Existing Urdu/Hindi poems
+const urduHindiPoems: Poem[] = [
   {
     id: "ghalib-1",
     content: [
@@ -17,7 +20,8 @@ export const poems: Poem[] = [
     ],
     author: "Mirza Ghalib",
     category: ["life", "desire"],
-    isFeatured: true
+    isFeatured: true,
+    language: "urdu"
   },
   {
     id: "faiz-1",
@@ -26,7 +30,8 @@ export const poems: Poem[] = [
       "Jaise veerane mein chupke se bahaar aa jaye."
     ],
     author: "Faiz Ahmed Faiz",
-    category: ["love", "memory"]
+    category: ["love", "memory"],
+    language: "urdu"
   },
   {
     id: "mir-1",
@@ -35,7 +40,8 @@ export const poems: Poem[] = [
       "Jaane na jaane gul hi na jaane baagh to saara jaane hai."
     ],
     author: "Mir Taqi Mir",
-    category: ["nature", "knowledge"]
+    category: ["nature", "knowledge"],
+    language: "urdu"
   },
   {
     id: "iqbal-1",
@@ -45,7 +51,8 @@ export const poems: Poem[] = [
     ],
     author: "Allama Iqbal",
     category: ["inspiration", "spirituality"],
-    isFeatured: true
+    isFeatured: true,
+    language: "urdu"
   },
   {
     id: "shakir-1",
@@ -54,7 +61,8 @@ export const poems: Poem[] = [
       "Aansoo tere saare meri palkon pe saja de."
     ],
     author: "Parveen Shakir",
-    category: ["love"]
+    category: ["love"],
+    language: "urdu"
   },
   {
     id: "ghalib-2",
@@ -63,7 +71,8 @@ export const poems: Poem[] = [
       "Royenge hum hazaar baar, koi humein sataaye kyun."
     ],
     author: "Mirza Ghalib",
-    category: ["sorrow", "emotion"]
+    category: ["sorrow", "emotion"],
+    language: "urdu"
   },
   {
     id: "faraz-1",
@@ -72,7 +81,8 @@ export const poems: Poem[] = [
       "Aa phir se mujhe chhod ke jaane ke liye aa."
     ],
     author: "Ahmed Faraz",
-    category: ["heartbreak", "love"]
+    category: ["heartbreak", "love"],
+    language: "urdu"
   },
   {
     id: "gulzar-1",
@@ -81,7 +91,8 @@ export const poems: Poem[] = [
       "Baithe rahein tasavvur-e-jaan kiye hue."
     ],
     author: "Gulzar",
-    category: ["nostalgia", "memory"]
+    category: ["nostalgia", "memory"],
+    language: "urdu"
   },
   {
     id: "azmi-1",
@@ -90,7 +101,8 @@ export const poems: Poem[] = [
       "Phir kyun maut ka intezaar karna."
     ],
     author: "Kaifi Azmi",
-    category: ["life", "philosophy"]
+    category: ["life", "philosophy"],
+    language: "urdu"
   },
   {
     id: "sultanpuri-1",
@@ -99,7 +111,8 @@ export const poems: Poem[] = [
       "Na main tumse koi shikwa na tum mujhse koi shikwa."
     ],
     author: "Majrooh Sultanpuri",
-    category: ["relationships", "parting"]
+    category: ["relationships", "parting"],
+    language: "urdu"
   },
   {
     id: "mir-2",
@@ -108,7 +121,8 @@ export const poems: Poem[] = [
       "Meri wehshat teri shamat hi sahi."
     ],
     author: "Mir Taqi Mir",
-    category: ["love", "madness"]
+    category: ["love", "madness"],
+    language: "urdu"
   },
   {
     id: "faiz-2",
@@ -118,7 +132,8 @@ export const poems: Poem[] = [
     ],
     author: "Faiz Ahmed Faiz",
     category: ["love", "disillusionment"],
-    isFeatured: true
+    isFeatured: true,
+    language: "urdu"
   },
   // Additional Ghalib couplets
   {
@@ -128,7 +143,8 @@ export const poems: Poem[] = [
       "Jo lagaye na lage aur bujhaye na bane."
     ],
     author: "Mirza Ghalib",
-    category: ["love", "passion"]
+    category: ["love", "passion"],
+    language: "urdu"
   },
   {
     id: "ghalib-4",
@@ -137,7 +153,8 @@ export const poems: Poem[] = [
       "Kya bane baat jahaan mein tum bhala bataye na bane."
     ],
     author: "Mirza Ghalib",
-    category: ["sorrow", "expression"]
+    category: ["sorrow", "expression"],
+    language: "urdu"
   },
   {
     id: "ghalib-5",
@@ -146,7 +163,8 @@ export const poems: Poem[] = [
       "Sab pe chalna hai phir bhi na koi thakna."
     ],
     author: "Mirza Ghalib",
-    category: ["journey", "perseverance"]
+    category: ["journey", "perseverance"],
+    language: "urdu"
   },
   {
     id: "ghalib-6",
@@ -155,7 +173,8 @@ export const poems: Poem[] = [
       "Agar aur jeete rehte yahi intezaar hota."
     ],
     author: "Mirza Ghalib",
-    category: ["fate", "longing"]
+    category: ["fate", "longing"],
+    language: "urdu"
   },
   {
     id: "ghalib-7",
@@ -164,7 +183,8 @@ export const poems: Poem[] = [
       "Hota hai shab-o-roz tamaasha mere aage."
     ],
     author: "Mirza Ghalib",
-    category: ["philosophy", "worldview"]
+    category: ["philosophy", "worldview"],
+    language: "urdu"
   },
   {
     id: "ghalib-8",
@@ -173,7 +193,8 @@ export const poems: Poem[] = [
       "Koi na ho, koi sun na sake."
     ],
     author: "Mirza Ghalib",
-    category: ["solitude", "escape"]
+    category: ["solitude", "escape"],
+    language: "urdu"
   },
   // Additional Gulzar couplets
   {
@@ -183,7 +204,8 @@ export const poems: Poem[] = [
       "Phir bhi sab kuch puraana lagta hai."
     ],
     author: "Gulzar",
-    category: ["nostalgia", "memories"]
+    category: ["nostalgia", "memories"],
+    language: "urdu"
   },
   {
     id: "gulzar-3",
@@ -192,7 +214,8 @@ export const poems: Poem[] = [
       "Dil ke taar chhed ke, khelta rahega ye raat."
     ],
     author: "Gulzar",
-    category: ["love", "commitment"]
+    category: ["love", "commitment"],
+    language: "urdu"
   },
   {
     id: "gulzar-4",
@@ -201,7 +224,8 @@ export const poems: Poem[] = [
       "Dosti karna bhi ek fasana hai."
     ],
     author: "Gulzar",
-    category: ["friendship", "loyalty"]
+    category: ["friendship", "loyalty"],
+    language: "urdu"
   },
   {
     id: "gulzar-5",
@@ -210,7 +234,8 @@ export const poems: Poem[] = [
       "Barish ki boondein bhi kuch keh jaayein."
     ],
     author: "Gulzar",
-    category: ["nature", "rain"]
+    category: ["nature", "rain"],
+    language: "urdu"
   },
   {
     id: "gulzar-6",
@@ -219,12 +244,23 @@ export const poems: Poem[] = [
       "Jaise veerane mein chupke se bahaar aa jaaye."
     ],
     author: "Gulzar",
-    category: ["love", "memory"]
+    category: ["love", "memory"],
+    language: "urdu"
   }
 ];
 
+// Convert English poems to the Poem interface
+const convertedEnglishPoems: Poem[] = englishPoems.map(poem => ({
+  ...poem,
+  language: "english" as const
+}));
+
+// Combine all poems
+export const poems: Poem[] = [...urduHindiPoems, ...convertedEnglishPoems];
+
 export const featuredPoems = poems.filter(poem => poem.isFeatured === true);
 
+// Add new categories for English poetry
 export const categories = [
   { id: "love", name: "Love" },
   { id: "life", name: "Life" },
@@ -238,9 +274,19 @@ export const categories = [
   { id: "relationships", name: "Relationships" },
   { id: "passion", name: "Passion" },
   { id: "solitude", name: "Solitude" },
-  { id: "friendship", name: "Friendship" }
+  { id: "friendship", name: "Friendship" },
+  { id: "beauty", name: "Beauty" },
+  { id: "courage", name: "Courage" },
+  { id: "journey", name: "Journey" },
+  { id: "hope", name: "Hope" },
+  { id: "dreams", name: "Dreams" },
+  { id: "purpose", name: "Purpose" },
+  { id: "greatness", name: "Greatness" },
+  { id: "perception", name: "Perception" },
+  { id: "existentialism", name: "Existentialism" }
 ];
 
+// Add new poets
 export const poets = [
   { id: "ghalib", name: "Mirza Ghalib" },
   { id: "faiz", name: "Faiz Ahmed Faiz" },
@@ -250,5 +296,22 @@ export const poets = [
   { id: "faraz", name: "Ahmed Faraz" },
   { id: "gulzar", name: "Gulzar" },
   { id: "azmi", name: "Kaifi Azmi" },
-  { id: "sultanpuri", name: "Majrooh Sultanpuri" }
+  { id: "sultanpuri", name: "Majrooh Sultanpuri" },
+  { id: "shakespeare", name: "William Shakespeare" },
+  { id: "frost", name: "Robert Frost" },
+  { id: "dickinson", name: "Emily Dickinson" },
+  { id: "yeats", name: "W.B. Yeats" },
+  { id: "rumi", name: "Rumi" },
+  { id: "byron", name: "Lord Byron" },
+  { id: "henley", name: "William Ernest Henley" },
+  { id: "cummings", name: "E.E. Cummings" },
+  { id: "oliver", name: "Mary Oliver" },
+  { id: "poe", name: "Edgar Allan Poe" }
+];
+
+// Language filter options
+export const languages = [
+  { id: "urdu", name: "Urdu" },
+  { id: "hindi", name: "Hindi" },
+  { id: "english", name: "English" }
 ];

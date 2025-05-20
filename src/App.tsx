@@ -11,6 +11,7 @@ import PoemPage from "./pages/PoemPage";
 import ExplorePage from "./pages/ExplorePage";
 import CollectionsPage from "./pages/CollectionsPage";
 import PoetPage from "./pages/PoetPage";
+import PoetsListPage from "./pages/PoetsListPage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/explore" element={<ExplorePage />} />
             <Route path="/collections" element={<CollectionsPage />} />
             <Route path="/poet/:id" element={<PoetPage />} />
+            <Route path="/poets" element={<PoetsListPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

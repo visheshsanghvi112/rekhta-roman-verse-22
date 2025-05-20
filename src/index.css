@@ -72,6 +72,10 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-sans;
   }
@@ -110,5 +114,96 @@
   /* Ambient button */
   .ambient-btn {
     @apply rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-muted/80;
+  }
+
+  /* Animation utilities */
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .scale-in {
+    @apply animate-scale-in;
+  }
+
+  .slide-in-right {
+    @apply animate-slide-in-right;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-md hover:shadow-rekhta-gold/20;
+  }
+
+  /* Pulse animation for the random poetry button */
+  @keyframes gentle-pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.02);
+      opacity: 0.9;
+    }
+  }
+
+  .gentle-pulse {
+    animation: gentle-pulse 3s ease-in-out infinite;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .floating {
+    animation: float 3s ease-in-out infinite;
   }
 }
