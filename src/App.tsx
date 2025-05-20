@@ -12,29 +12,33 @@ import ExplorePage from "./pages/ExplorePage";
 import CollectionsPage from "./pages/CollectionsPage";
 import PoetPage from "./pages/PoetPage";
 import PoetsListPage from "./pages/PoetsListPage";
+import { useState } from "react";
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Index />} />
-            <Route path="/poem/:id" element={<PoemPage />} />
-            <Route path="/explore" element={<ExplorePage />} />
-            <Route path="/collections" element={<CollectionsPage />} />
-            <Route path="/poet/:id" element={<PoetPage />} />
-            <Route path="/poets" element={<PoetsListPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  // Create a client
+  const [queryClient] = useState(() => new QueryClient());
+  
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Index />} />
+              <Route path="/poem/:id" element={<PoemPage />} />
+              <Route path="/explore" element={<ExplorePage />} />
+              <Route path="/collections" element={<CollectionsPage />} />
+              <Route path="/poet/:id" element={<PoetPage />} />
+              <Route path="/poets" element={<PoetsListPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
