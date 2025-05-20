@@ -60,7 +60,7 @@ export const poems: Poem[] = [
     id: "ghalib-2",
     content: [
       "Dil hi to hai na sang-o-khisht, dard se bhar na aaye kyun,",
-      "Royenge hum bhi agar teri aankhon mein aansu aayein."
+      "Royenge hum hazaar baar, koi humein sataaye kyun."
     ],
     author: "Mirza Ghalib",
     category: ["sorrow", "emotion"]
@@ -119,6 +119,107 @@ export const poems: Poem[] = [
     author: "Faiz Ahmed Faiz",
     category: ["love", "disillusionment"],
     isFeatured: true
+  },
+  // Additional Ghalib couplets
+  {
+    id: "ghalib-3",
+    content: [
+      "Ishq par zor nahin hai ye woh aatish Ghalib,",
+      "Jo lagaye na lage aur bujhaye na bane."
+    ],
+    author: "Mirza Ghalib",
+    category: ["love", "passion"]
+  },
+  {
+    id: "ghalib-4",
+    content: [
+      "Nuktacheen hai gham-e-dil usko sunaye na bane,",
+      "Kya bane baat jahaan mein tum bhala bataye na bane."
+    ],
+    author: "Mirza Ghalib",
+    category: ["sorrow", "expression"]
+  },
+  {
+    id: "ghalib-5",
+    content: [
+      "Hazaaron raahen aisi ke manzil na ho,",
+      "Sab pe chalna hai phir bhi na koi thakna."
+    ],
+    author: "Mirza Ghalib",
+    category: ["journey", "perseverance"]
+  },
+  {
+    id: "ghalib-6",
+    content: [
+      "Yeh na thi hamari qismat ke visal-e-yaar hota,",
+      "Agar aur jeete rehte yahi intezaar hota."
+    ],
+    author: "Mirza Ghalib",
+    category: ["fate", "longing"]
+  },
+  {
+    id: "ghalib-7",
+    content: [
+      "Bazeecha-e-atfaal hai duniya mere aage,",
+      "Hota hai shab-o-roz tamaasha mere aage."
+    ],
+    author: "Mirza Ghalib",
+    category: ["philosophy", "worldview"]
+  },
+  {
+    id: "ghalib-8",
+    content: [
+      "Rahiye ab aisi jagah chalien ke jahan,",
+      "Koi na ho, koi sun na sake."
+    ],
+    author: "Mirza Ghalib",
+    category: ["solitude", "escape"]
+  },
+  // Additional Gulzar couplets
+  {
+    id: "gulzar-2",
+    content: [
+      "Tere jaise shehar mein, koi aaya hai kahin,",
+      "Phir bhi sab kuch puraana lagta hai."
+    ],
+    author: "Gulzar",
+    category: ["nostalgia", "memories"]
+  },
+  {
+    id: "gulzar-3",
+    content: [
+      "Jab tak hai jaan, main na chhodunga tera saath,",
+      "Dil ke taar chhed ke, khelta rahega ye raat."
+    ],
+    author: "Gulzar",
+    category: ["love", "commitment"]
+  },
+  {
+    id: "gulzar-4",
+    content: [
+      "Koi saath de ya na de, dosti nibhani padti hai,",
+      "Dosti karna bhi ek fasana hai."
+    ],
+    author: "Gulzar",
+    category: ["friendship", "loyalty"]
+  },
+  {
+    id: "gulzar-5",
+    content: [
+      "Mitti ki khushboo lekar, baadal aaye,",
+      "Barish ki boondein bhi kuch keh jaayein."
+    ],
+    author: "Gulzar",
+    category: ["nature", "rain"]
+  },
+  {
+    id: "gulzar-6",
+    content: [
+      "Raat yun dil mein teri khoi hui yaad aayi,",
+      "Jaise veerane mein chupke se bahaar aa jaaye."
+    ],
+    author: "Gulzar",
+    category: ["love", "memory"]
   }
 ];
 
@@ -134,7 +235,10 @@ export const categories = [
   { id: "memory", name: "Memory" },
   { id: "desire", name: "Desire" },
   { id: "heartbreak", name: "Heartbreak" },
-  { id: "relationships", name: "Relationships" }
+  { id: "relationships", name: "Relationships" },
+  { id: "passion", name: "Passion" },
+  { id: "solitude", name: "Solitude" },
+  { id: "friendship", name: "Friendship" }
 ];
 
 export const poets = [

@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-4 border-t border-rekhta-gold/20 text-center text-rekhta-brown/60 text-xs">
-          <p>© {new Date().getFullYear()} Rekhta Realms. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Rekhta Realms. All rights reserved. Created by <a href="http://visheshsanghvi.me/" className="text-rekhta-gold hover:underline" target="_blank" rel="noopener noreferrer">Vishesh Sanghvi</a></p>
         </div>
       </div>
     </footer>
