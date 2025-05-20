@@ -18,8 +18,8 @@ const ExplorePage = () => {
   const searchParams = new URLSearchParams(location.search);
   
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState(searchParams.get("category") || "");
-  const [selectedPoet, setSelectedPoet] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState(searchParams.get("category") || "all");
+  const [selectedPoet, setSelectedPoet] = useState("all");
   const [filteredPoems, setFilteredPoems] = useState(poems);
 
   useEffect(() => {
@@ -42,13 +42,13 @@ const ExplorePage = () => {
       );
     }
 
-    if (selectedCategory) {
+    if (selectedCategory && selectedCategory !== "all") {
       filtered = filtered.filter(
         (poem) => poem.category?.includes(selectedCategory)
       );
     }
 
-    if (selectedPoet) {
+    if (selectedPoet && selectedPoet !== "all") {
       filtered = filtered.filter(
         (poem) => poem.author.toLowerCase().includes(selectedPoet.toLowerCase())
       );
@@ -60,7 +60,7 @@ const ExplorePage = () => {
   const handleCategoryChange = (value: string) => {
     setSelectedCategory(value);
     const params = new URLSearchParams();
-    if (value) params.set("category", value);
+    if (value && value !== "all") params.set("category", value);
     navigate({ search: params.toString() });
   };
 
@@ -92,7 +92,7 @@ const ExplorePage = () => {
                 <SelectValue placeholder="Select Category" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Categories</SelectItem>
+                <SelectItem value="all">All Categories</SelectItem>
                 {categories.map((category) => (
                   <SelectItem key={category.id} value={category.id}>
                     {category.name}
@@ -107,7 +107,7 @@ const ExplorePage = () => {
                 <SelectValue placeholder="Select Poet" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Poets</SelectItem>
+                <SelectItem value="all">All Poets</SelectItem>
                 {poets.map((poet) => (
                   <SelectItem key={poet.id} value={poet.name}>
                     {poet.name}
