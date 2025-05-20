@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Note, Book } from "lucide-react";
+import { BookText, Book } from "lucide-react";
 import { poems } from "@/data/poems";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -63,7 +63,7 @@ const PoemPage = () => {
                 className="text-rekhta-brown" 
                 onClick={() => setShowNotes(!showNotes)}
               >
-                <Note size={16} className="mr-2" />
+                <BookText size={16} className="mr-2" />
                 {showNotes ? "Hide Notes" : "Add Notes"}
               </Button>
             </div>
@@ -94,7 +94,7 @@ const PoemPage = () => {
           <Card className="mb-8 border-rekhta-gold/10 bg-rekhta-gold/5">
             <CardContent className="pt-6">
               <h3 className="font-serif text-xl text-rekhta-brown mb-4 flex items-center">
-                <Note size={20} className="mr-2" /> Your Notes
+                <BookText size={20} className="mr-2" /> Your Notes
               </h3>
               <textarea
                 ref={textareaRef}
