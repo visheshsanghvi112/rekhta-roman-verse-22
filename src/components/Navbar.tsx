@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, BookOpen, Search, Home, Users } from "lucide-react";
+import { Menu, X, BookOpen, Search, Home, Users, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -98,7 +98,8 @@ const NavLinks = ({ mobile, onClick }: NavLinksProps) => {
     { name: "Home", to: "/", icon: Home },
     { name: "Explore", to: "/explore", icon: Search },
     { name: "Collections", to: "/collections", icon: BookOpen },
-    { name: "Poets", to: "/poets", icon: Users }
+    { name: "Poets", to: "/poets", icon: Users },
+    { name: "Quotes", to: "/quotes", icon: Quote }
   ];
 
   return (
