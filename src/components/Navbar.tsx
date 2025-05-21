@@ -2,13 +2,14 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, BookOpen, Search, Home, Users } from "lucide-react";
+import { Menu, X, BookOpen, Search, Home, Users, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const isQuotesPage = location.pathname === "/quotes";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,14 +52,28 @@ const Navbar = () => {
         </Link>
 
         {/* Mobile menu button */}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </Button>
+        <div className="flex items-center gap-2 md:gap-4">
+          {isQuotesPage && (
+            <Button 
+              variant="outline"
+              size="sm"
+              className="border-rekhta-gold text-rekhta-brown hover:bg-rekhta-gold/10"
+              onClick={() => window.dispatchEvent(new CustomEvent('toggle-quotes-sidebar'))}
+            >
+              <Quote size={18} className="mr-2" />
+              Explore Quotes
+            </Button>
+          )}
+
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </Button>
+        </div>
 
         {/* Desktop navigation */}
         <div className="hidden md:flex items-center space-x-6">
@@ -98,7 +113,8 @@ const NavLinks = ({ mobile, onClick }: NavLinksProps) => {
     { name: "Home", to: "/", icon: Home },
     { name: "Explore", to: "/explore", icon: Search },
     { name: "Collections", to: "/collections", icon: BookOpen },
-    { name: "Poets", to: "/poets", icon: Users }
+    { name: "Poets", to: "/poets", icon: Users },
+    { name: "Quotes", to: "/quotes", icon: Quote }
   ];
 
   return (
