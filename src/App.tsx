@@ -13,6 +13,7 @@ import ExplorePage from "./pages/ExplorePage";
 import CollectionsPage from "./pages/CollectionsPage";
 import PoetPage from "./pages/PoetPage";
 import PoetsListPage from "./pages/PoetsListPage";
+import QuotesPage from "./pages/QuotesPage";
 import { useState } from "react";
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
                 <Route path="/collections" element={<CollectionsPage />} />
                 <Route path="/poet/:id" element={<PoetPage />} />
                 <Route path="/poets" element={<PoetsListPage />} />
+                <Route path="/quotes" element={<QuotesPage />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>

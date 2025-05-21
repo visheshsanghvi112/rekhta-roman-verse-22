@@ -1,4 +1,3 @@
-
 import { Poem } from "../types";
 
 export const motivationalPoems: Poem[] = [
@@ -619,6 +618,121 @@ export const motivationalPoems: Poem[] = [
     ],
     author: "C.W. Longenecker",
     category: ["motivation", "mindset", "victory"],
+    language: "english"
+  },
+  {
+    id: "motivation-51",
+    title: "Belief",
+    content: [
+      "Believe you can and you're halfway there.",
+      "Belief is the first step to achievement."
+    ],
+    author: "Theodore Roosevelt",
+    category: ["motivation", "belief", "achievement"],
+    language: "english"
+  },
+  {
+    id: "motivation-52",
+    title: "Inner Strength",
+    content: [
+      "What lies behind us and what lies before us",
+      "are tiny matters compared to what lies within us.",
+      "Inner strength outweighs external circumstances."
+    ],
+    author: "Ralph Waldo Emerson",
+    category: ["motivation", "strength", "perspective"],
+    language: "english"
+  },
+  {
+    id: "motivation-53",
+    title: "Start Now",
+    content: [
+      "Start where you are. Use what you have. Do what you can.",
+      "Begin with what's in your hands, right now."
+    ],
+    author: "Arthur Ashe",
+    category: ["motivation", "action", "beginnings"],
+    language: "english"
+  },
+  {
+    id: "motivation-54",
+    title: "Make a Difference",
+    content: [
+      "Act as if what you do makes a difference. It does.",
+      "Every action matters more than we know."
+    ],
+    author: "William James",
+    category: ["motivation", "impact", "action"],
+    language: "english"
+  },
+  {
+    id: "motivation-55",
+    title: "Resilience",
+    content: [
+      "Success is how high you bounce when you hit bottom.",
+      "True success is rising after falling."
+    ],
+    author: "George S. Patton",
+    category: ["motivation", "resilience", "success"],
+    language: "english"
+  },
+  {
+    id: "motivation-56",
+    title: "Tomorrow",
+    content: [
+      "The only limit to our realization of tomorrow",
+      "will be our doubts of today.",
+      "Doubt is the biggest barrier to future success."
+    ],
+    author: "Franklin D. Roosevelt",
+    category: ["motivation", "doubt", "belief"],
+    language: "english"
+  },
+  {
+    id: "motivation-57",
+    title: "Beauty",
+    content: [
+      "Everything has beauty, but not everyone sees it.",
+      "Perspective shapes your experience."
+    ],
+    author: "Confucius",
+    category: ["motivation", "perspective", "beauty"],
+    language: "english"
+  },
+  {
+    id: "motivation-58",
+    title: "Courage",
+    content: [
+      "Courage is not the absence of fear,",
+      "but the triumph over it.",
+      "Real courage comes from moving through fear."
+    ],
+    author: "Nelson Mandela",
+    category: ["motivation", "courage", "fear"],
+    language: "english"
+  },
+  {
+    id: "motivation-59",
+    title: "Challenge Limits",
+    content: [
+      "Don't limit your challenges.",
+      "Challenge your limits.",
+      "Push boundaries, don't obey them."
+    ],
+    author: "Jerry Dunn",
+    category: ["motivation", "challenge", "growth"],
+    language: "english"
+  },
+  {
+    id: "motivation-60",
+    title: "True Success",
+    content: [
+      "Success is not how high you have climbed,",
+      "but how you make a positive difference to the world.",
+      "True success impacts others positively."
+    ],
+    author: "Roy T. Bennett",
+    category: ["motivation", "success", "impact"],
     language: "english"
   }
 ];
