@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { getRandomQuote } from "@/data/quotes";
 import { Button } from "@/components/ui/button";
-import { Random } from "lucide-react";
+import { Shuffle } from "lucide-react";
 import QuoteCard from "./QuoteCard";
 
 const RandomQuoteButton = () => {
@@ -22,7 +22,7 @@ const RandomQuoteButton = () => {
         onClick={handleRandomQuote}
         className="bg-rekhta-brown hover:bg-rekhta-brown/90 text-white gentle-pulse"
       >
-        <Random className="mr-2 h-5 w-5" />
+        <Shuffle className="mr-2 h-5 w-5" />
         Random Quote
       </Button>
       
