@@ -14,7 +14,6 @@ import CollectionsPage from "./pages/CollectionsPage";
 import PoetPage from "./pages/PoetPage";
 import PoetsListPage from "./pages/PoetsListPage";
 import QuotesPage from "./pages/QuotesPage";
-import { SidebarProvider } from "./components/ui/sidebar";
 import { useState } from "react";
 
 const App = () => {
@@ -27,22 +26,20 @@ const App = () => {
         <TooltipProvider>
           <Toaster />
           <Sonner />
-          <SidebarProvider>
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Layout />}>
-                  <Route index element={<Index />} />
-                  <Route path="/poem/:id" element={<PoemPage />} />
-                  <Route path="/explore" element={<ExplorePage />} />
-                  <Route path="/collections" element={<CollectionsPage />} />
-                  <Route path="/poet/:id" element={<PoetPage />} />
-                  <Route path="/poets" element={<PoetsListPage />} />
-                  <Route path="/quotes" element={<QuotesPage />} />
-                  <Route path="*" element={<NotFound />} />
-                </Route>
-              </Routes>
-            </BrowserRouter>
-          </SidebarProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<Index />} />
+                <Route path="/poem/:id" element={<PoemPage />} />
+                <Route path="/explore" element={<ExplorePage />} />
+                <Route path="/collections" element={<CollectionsPage />} />
+                <Route path="/poet/:id" element={<PoetPage />} />
+                <Route path="/poets" element={<PoetsListPage />} />
+                <Route path="/quotes" element={<QuotesPage />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
         </TooltipProvider>
       </QueryClientProvider>
     </HelmetProvider>
