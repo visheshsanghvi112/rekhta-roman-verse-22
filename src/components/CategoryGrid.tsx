@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { categories } from "@/data/poems";
 import { motion } from "framer-motion";
+import { BookOpen } from "lucide-react";
 
 const CategoryGrid = () => {
   // Find the motivation category to highlight it
@@ -32,6 +33,11 @@ const CategoryGrid = () => {
                 : "bg-gradient-to-br from-white to-rekhta-cream"
             }`}>
               <CardContent className="flex flex-col items-center justify-center p-6 h-24">
+                {category?.id === "motivation" && (
+                  <div className="mb-2 text-rekhta-gold">
+                    <BookOpen size={18} />
+                  </div>
+                )}
                 <span className={`font-serif text-lg ${
                   category?.id === "motivation" 
                     ? "text-rekhta-brown font-medium" 
@@ -39,6 +45,11 @@ const CategoryGrid = () => {
                 }`}>
                   {category?.name}
                 </span>
+                {category?.id === "motivation" && (
+                  <span className="text-xs text-rekhta-brown/70 mt-1">
+                    Featured Collection
+                  </span>
+                )}
               </CardContent>
             </Card>
           </Link>
