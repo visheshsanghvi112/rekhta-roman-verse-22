@@ -1,5 +1,5 @@
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -14,6 +14,14 @@ const PoemPage = () => {
   const [notes, setNotes] = useState("");
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const { toast } = useToast();
+
+  // Load saved notes when component mounts
+  useEffect(() => {
+    const savedNotes = localStorage.getItem(`poem_notes_${id}`);
+    if (savedNotes) {
+      setNotes(savedNotes);
+    }
+  }, [id]);
 
   const handleSaveNotes = () => {
     localStorage.setItem(`poem_notes_${id}`, notes);

@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import { Poem } from "@/data/poems";
+import { Poem } from "@/data/types";
 import { motion } from "framer-motion";
 import { BookOpen, Heart } from "lucide-react";
 
