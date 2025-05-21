@@ -246,7 +246,304 @@ const urduHindiPoems: Poem[] = [
     author: "Gulzar",
     category: ["love", "memory"],
     language: "urdu"
-  }
+  },
+  
+  // Additional Urdu/Hindi poems
+  {
+    id: "sahir-1",
+    content: [
+      "Ye duniya agar mil bhi jaye to kya hai,",
+      "Insaan ko insaan se bhi pyaar nahi."
+    ],
+    author: "Sahir Ludhianvi",
+    category: ["humanity", "society"],
+    language: "urdu"
+  },
+  {
+    id: "jaun-1",
+    content: [
+      "Maut aati hai woh shaam koi tanhaa to nahi",
+      "Dil to bachcha hai jee chahta hai har cheez ko haath lagaaye"
+    ],
+    author: "Jaun Elia",
+    category: ["mortality", "innocence"],
+    language: "urdu"
+  },
+  {
+    id: "iqbal-2",
+    content: [
+      "Sitaron se aage jahaan aur bhi hain,",
+      "Abhi ishq ke imtihaan aur bhi hain."
+    ],
+    author: "Allama Iqbal",
+    category: ["ambition", "exploration"],
+    isFeatured: true,
+    language: "urdu"
+  },
+  {
+    id: "ghalib-9",
+    content: [
+      "Na tha kuch toh khuda tha, kuch na hota toh khuda hota,",
+      "Duboya mujhko hone ne, na hota main toh kya hota."
+    ],
+    author: "Mirza Ghalib",
+    category: ["existence", "philosophy"],
+    language: "urdu"
+  },
+  {
+    id: "nida-1",
+    content: [
+      "Koi haath bhi na milayega jo gale miloge tapaak se",
+      "Yeh naye mizaaj ka shahr hai zara faasle se mila karo."
+    ],
+    author: "Nida Fazli",
+    category: ["society", "distance"],
+    language: "urdu"
+  },
+  {
+    id: "bashir-1",
+    content: [
+      "Dil ke arman aansuon mein beh gaye,",
+      "Ham wafa karke bhi tanha reh gaye."
+    ],
+    author: "Bashir Badr",
+    category: ["heartbreak", "loneliness"],
+    language: "urdu"
+  },
+  {
+    id: "rahat-1",
+    content: [
+      "Tujhe apna nahi bana sakte,",
+      "Tere bina reh bhi nahi sakte."
+    ],
+    author: "Rahat Indori",
+    category: ["love", "dilemma"],
+    language: "urdu"
+  },
+  {
+    id: "dushyant-1",
+    content: [
+      "Kaun kehta hai ki aasmaan mein suraakh nahin ho sakta",
+      "Ek patthar to tabiyat se uchaalo yaaron."
+    ],
+    author: "Dushyant Kumar",
+    category: ["revolution", "courage"],
+    language: "hindi"
+  },
+  {
+    id: "nirala-1",
+    content: [
+      "Tod do tod do tod do",
+      "Tod do andhkaar ke bandhan",
+      "Door karo prabhu dukh ke saadhan."
+    ],
+    author: "Suryakant Tripathi 'Nirala'",
+    category: ["freedom", "liberation"],
+    language: "hindi"
+  },
+  {
+    id: "dinkar-1",
+    content: [
+      "Kshama shobhti us bhujang ko jiske paas garal ho",
+      "Usko kya jo dantheen vishrahit vineet saral ho."
+    ],
+    author: "Ramdhari Singh Dinkar",
+    category: ["power", "forgiveness"],
+    language: "hindi"
+  },
+  {
+    id: "harivansh-1",
+    content: [
+      "Aaj phir jeene ki tamanna hai,",
+      "Aaj phir marne ka iraada hai."
+    ],
+    author: "Harivansh Rai Bachchan",
+    category: ["life", "determination"],
+    isFeatured: true,
+    language: "hindi"
+  },
+  {
+    id: "mahadevi-1",
+    content: [
+      "Bikharne do anchal mein sitaaron ki tarah gum",
+      "Har ek aansu moti ki tarah maanga hai tumne."
+    ],
+    author: "Mahadevi Verma",
+    category: ["tears", "emotion"],
+    language: "hindi"
+  },
+  {
+    id: "shakir-2",
+    content: [
+      "Woh toh khushboo hai hawa mein bikhar jayega,",
+      "Masla phoolon ka hai phool kidhar jayega."
+    ],
+    author: "Parveen Shakir",
+    category: ["beauty", "transience"],
+    language: "urdu"
+  },
+  {
+    id: "faraz-2",
+    content: [
+      "Aaj bhi jab woh mujhse milte hain,",
+      "Nazar jhuka lete hain, baat karta hai koi aur."
+    ],
+    author: "Ahmed Faraz",
+    category: ["meeting", "awkwardness"],
+    language: "urdu"
+  },
+  {
+    id: "kumar-1",
+    content: [
+      "Jo tum aa jate ek baar,",
+      "Toh achchha ho jaata."
+    ],
+    author: "Kumar Vishwas",
+    category: ["longing", "hope"],
+    language: "hindi"
+  },
+  {
+    id: "wasim-1",
+    content: [
+      "Gulon mein rang bhare baad-e-naubahaar chale",
+      "Chale bhi aao ki gulshan ka kaarobaar chale."
+    ],
+    author: "Wasim Barelvi",
+    category: ["spring", "renewal"],
+    language: "urdu"
+  },
+  {
+    id: "amrita-1",
+    content: [
+      "Main toot jaana chahti hoon",
+      "Tumhaare saath jud jaane ke liye."
+    ],
+    author: "Amrita Pritam",
+    category: ["love", "union"],
+    isFeatured: true,
+    language: "hindi"
+  },
+  {
+    id: "sumitranandan-1",
+    content: [
+      "Jeevan kya hai teen din ka mela",
+      "Do din ka khela, ek din ka mela."
+    ],
+    author: "Sumitranandan Pant",
+    category: ["life", "transience"],
+    language: "hindi"
+  },
+  {
+    id: "kabir-1",
+    content: [
+      "Bura jo dekhan main chala, bura na milya koye",
+      "Jo mann khoja apna, to mujhse bura na koye."
+    ],
+    author: "Kabir Das",
+    category: ["introspection", "wisdom"],
+    isFeatured: true,
+    language: "hindi"
+  },
+  {
+    id: "tulsidas-1",
+    content: [
+      "Jai Hanuman gyan gun sagar",
+      "Jai kapis tihu lok ujagar."
+    ],
+    author: "Tulsidas",
+    category: ["devotion", "prayer"],
+    language: "hindi"
+  },
+  {
+    id: "habib-1",
+    content: [
+      "Main akela hi chala tha janib-e-manzil magar",
+      "Log saath aate gaye aur karvan banta gaya."
+    ],
+    author: "Habib Jalib",
+    category: ["journey", "community"],
+    language: "urdu"
+  },
+  {
+    id: "kafi-1",
+    content: [
+      "Najane kis gali mein zindagi ki shaam ho jaye",
+      "Abhi to din hai baaki, aao kuch baatein ho jaye."
+    ],
+    author: "Kafi Azmi",
+    category: ["life", "conversation"],
+    language: "urdu"
+  },
+  {
+    id: "sahir-2",
+    content: [
+      "Kabhi kabhi mere dil mein khayal aata hai",
+      "Ki jaise tujhko banaya gaya hai mere liye."
+    ],
+    author: "Sahir Ludhianvi",
+    category: ["love", "destiny"],
+    language: "urdu"
+  },
+  {
+    id: "qateel-1",
+    content: [
+      "Mujhe kuch aisi lagan lagi ki main kya karoon",
+      "Teri soorat se hai aalam mein bahaar."
+    ],
+    author: "Qateel Shifai",
+    category: ["infatuation", "beauty"],
+    language: "urdu"
+  },
+  {
+    id: "javed-1",
+    content: [
+      "Tu idhar udhar ki na baat kar,",
+      "Ye bata ki kafila kyun luta."
+    ],
+    author: "Javed Akhtar",
+    category: ["accountability", "questioning"],
+    language: "urdu"
+  },
+  {
+    id: "prasad-1",
+    content: [
+      "Beeti vibhavari jaag ri,",
+      "Ambar panghat mein doobo rahi tara-ghat."
+    ],
+    author: "Jaishankar Prasad",
+    category: ["dawn", "nature"],
+    language: "hindi"
+  },
+  {
+    id: "maithili-1",
+    content: [
+      "Aaj ke is manahoos daur mein",
+      "Insaan ki awaaz hona chahiye insaan."
+    ],
+    author: "Maithilisharan Gupt",
+    category: ["humanity", "voice"],
+    language: "hindi"
+  },
+  {
+    id: "firaq-1",
+    content: [
+      "Ye husn ka jalwa karishma hai koi,",
+      "Nazar aata hai, dikhta nahi."
+    ],
+    author: "Firaq Gorakhpuri",
+    category: ["beauty", "perception"],
+    language: "urdu"
+  },
+  {
+    id: "josh-1",
+    content: [
+      "Aaj bazaar mein pabajolan chalo",
+      "Chashm-e-num, jaan-e-shoridaa kaafee nahin."
+    ],
+    author: "Josh Malihabadi",
+    category: ["rebellion", "courage"],
+    language: "urdu"
+  },
 ];
 
 // Convert English poems to the Poem interface
@@ -283,7 +580,22 @@ export const categories = [
   { id: "purpose", name: "Purpose" },
   { id: "greatness", name: "Greatness" },
   { id: "perception", name: "Perception" },
-  { id: "existentialism", name: "Existentialism" }
+  { id: "existentialism", name: "Existentialism" },
+  { id: "power", name: "Power" },
+  { id: "rebellion", name: "Rebellion" },
+  { id: "humanity", name: "Humanity" },
+  { id: "wisdom", name: "Wisdom" },
+  { id: "devotion", name: "Devotion" },
+  { id: "introspection", name: "Introspection" },
+  { id: "simplicity", name: "Simplicity" },
+  { id: "empowerment", name: "Empowerment" },
+  { id: "transience", name: "Transience" },
+  { id: "destiny", name: "Destiny" },
+  { id: "revolution", name: "Revolution" },
+  { id: "stoicism", name: "Stoicism" },
+  { id: "resilience", name: "Resilience" },
+  { id: "mortality", name: "Mortality" },
+  { id: "authentic", name: "Authenticity" }
 ];
 
 // Add new poets
@@ -306,7 +618,58 @@ export const poets = [
   { id: "henley", name: "William Ernest Henley" },
   { id: "cummings", name: "E.E. Cummings" },
   { id: "oliver", name: "Mary Oliver" },
-  { id: "poe", name: "Edgar Allan Poe" }
+  { id: "poe", name: "Edgar Allan Poe" },
+  { id: "wordsworth", name: "William Wordsworth" },
+  { id: "keats", name: "John Keats" },
+  { id: "blake", name: "William Blake" },
+  { id: "whitman", name: "Walt Whitman" },
+  { id: "kipling", name: "Rudyard Kipling" },
+  { id: "eliot", name: "T.S. Eliot" },
+  { id: "plath", name: "Sylvia Plath" },
+  { id: "angelou", name: "Maya Angelou" },
+  { id: "tennyson", name: "Alfred, Lord Tennyson" },
+  { id: "shelley", name: "Percy Bysshe Shelley" },
+  { id: "rilke", name: "Rainer Maria Rilke" },
+  { id: "thoreau", name: "Henry David Thoreau" },
+  { id: "gibran", name: "Kahlil Gibran" },
+  { id: "emerson", name: "Ralph Waldo Emerson" },
+  { id: "tagore", name: "Rabindranath Tagore" },
+  { id: "neruda", name: "Pablo Neruda" },
+  { id: "wilde", name: "Oscar Wilde" },
+  { id: "auden", name: "W.H. Auden" },
+  { id: "browning", name: "Elizabeth Barrett Browning" },
+  { id: "hughes", name: "Langston Hughes" },
+  { id: "sahir", name: "Sahir Ludhianvi" },
+  { id: "jaun", name: "Jaun Elia" },
+  { id: "nida", name: "Nida Fazli" },
+  { id: "bashir", name: "Bashir Badr" },
+  { id: "rahat", name: "Rahat Indori" },
+  { id: "dushyant", name: "Dushyant Kumar" },
+  { id: "nirala", name: "Suryakant Tripathi 'Nirala'" },
+  { id: "dinkar", name: "Ramdhari Singh Dinkar" },
+  { id: "harivansh", name: "Harivansh Rai Bachchan" },
+  { id: "mahadevi", name: "Mahadevi Verma" },
+  { id: "kumar", name: "Kumar Vishwas" },
+  { id: "wasim", name: "Wasim Barelvi" },
+  { id: "amrita", name: "Amrita Pritam" },
+  { id: "sumitranandan", name: "Sumitranandan Pant" },
+  { id: "kabir", name: "Kabir Das" },
+  { id: "tulsidas", name: "Tulsidas" },
+  { id: "habib", name: "Habib Jalib" },
+  { id: "kafi", name: "Kafi Azmi" },
+  { id: "qateel", name: "Qateel Shifai" },
+  { id: "javed", name: "Javed Akhtar" },
+  { id: "prasad", name: "Jaishankar Prasad" },
+  { id: "maithili", name: "Maithilisharan Gupt" },
+  { id: "firaq", name: "Firaq Gorakhpuri" },
+  { id: "josh", name: "Josh Malihabadi" },
+  { id: "longfellow", name: "Henry Wadsworth Longfellow" },
+  { id: "keller", name: "Helen Keller" },
+  { id: "havlicek", name: "Christian D. Larson" },
+  { id: "arnold", name: "Matthew Arnold" },
+  { id: "murray", name: "Douglas Malloch" },
+  { id: "aurelius", name: "Marcus Aurelius" },
+  { id: "williamson", name: "Marianne Williamson" }
 ];
 
 // Language filter options
