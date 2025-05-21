@@ -1,5 +1,4 @@
-
-import { Poem } from "@/data/poems";
+import { Poem } from "@/data/types";
 import PoemCard from "./PoemCard";
 
 interface PoemGridProps {
