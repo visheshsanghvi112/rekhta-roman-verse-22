@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# Poetry & Quotes Showcase
 
-## Project info
+## Project Description
+Poetry & Quotes Showcase is a web application designed for users to browse, read, and discover a diverse collection of poems and quotes. It offers a clean, user-friendly interface to explore literary works across different languages and themes.
 
-**URL**: https://lovable.dev/projects/40520458-66da-41de-9a39-73cf2c0a1e8b
+## Features
+- **Browse Poems**: View poems filterable by language or theme, including English, Hindi, Urdu, and Motivational categories.
+- **Discover Quotes**: Access a collection of quotes, featuring a "Quote of the Day".
+- **Explore Poets**: See a list of poets and easily navigate to their respective works.
+- **Responsive Design**: Enjoy a seamless experience across various devices and screen sizes.
+- **User-Friendly Interface**: Navigate and discover content intuitively.
 
-## How can I edit this code?
+## Technologies Used
+- **Vite**: A fast build tool and development server.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **shadcn-ui**: A collection of re-usable UI components.
 
-There are several ways of editing your application.
+## Project Structure
+- `public/`: Contains static assets such as images, icons, and other files that are served directly.
+- `src/`: Houses the main source code for the application.
+  - `components/`: Includes reusable React components used throughout the application.
+    - `ui/`: Contains UI components, typically sourced from libraries like shadcn-ui.
+  - `data/`: Stores the application's data, such as poem and quote collections.
+    - `poems/`: Contains poem data, often categorized by language or theme (e.g., `english.ts`, `hindi.ts`).
+  - `hooks/`: Custom React hooks for reusable logic.
+  - `lib/`: Utility functions and helper modules.
+  - `pages/`: Components that represent different pages or views within the application (e.g., HomePage, PoemDetailsPage).
+  - `App.tsx`: The main application component, often responsible for setting up routing and global layout.
+  - `main.tsx`: The entry point of the React application, where the root component is rendered into the DOM.
+- `index.html`: The main HTML file that serves as the entry point for the web application.
+- Configuration Files: Various configuration files for tools like Vite (`vite.config.ts`), TypeScript (`tsconfig.json`), Tailwind CSS (`tailwind.config.js`), ESLint (`.eslintrc.cjs`), etc.
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/40520458-66da-41de-9a39-73cf2c0a1e8b) and start prompting.
+### Prerequisites
+- Node.js (v18.x or later recommended)
+- npm or yarn
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/poetry-quotes-showcase.git
+    cd poetry-quotes-showcase
+    ```
+2.  **Install dependencies:**
+    Using npm:
+    ```bash
+    npm install
+    ```
+    Or using yarn:
+    ```bash
+    yarn install
+    ```
 
-**Use your preferred IDE**
+### Running the Development Server
+1.  **Start the development server:**
+    Using npm:
+    ```bash
+    npm run dev
+    ```
+    Or using yarn:
+    ```bash
+    yarn dev
+    ```
+2.  Open your browser and navigate to `http://localhost:5173` (or the port specified in your Vite configuration).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Deployment
+This project can be built and deployed to various static site hosting services such as:
+- Vercel
+- Netlify
+- GitHub Pages
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/40520458-66da-41de-9a39-73cf2c0a1e8b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Typically, you would run `npm run build` (or `yarn build`) to create a production build in the `dist` directory, which can then be deployed.
